@@ -12,8 +12,8 @@ public class LoginTest {
         driver.get("https://the-internet.herokuapp.com/login");
         driver.manage().window().maximize();
 
-        driver.findElement(By.id("username")).sendKeys("tomsmith");
-        driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
+        driver.findElement(By.id("username")).sendKeys("Updated Name");
+        driver.findElement(By.id("password")).sendKeys("SuperSuperSecretPassword!");
         driver.findElement(By.cssSelector("button[type='submit']")).click();
 
         String msg = driver.findElement(By.id("flash")).getText();
